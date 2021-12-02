@@ -1,0 +1,391 @@
+<?xml version="1.0" ?>
+<robot name="Finalporsia" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find Finalporsia_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find Finalporsia_description)/urdf/Finalporsia.trans" />
+<xacro:include filename="$(find Finalporsia_description)/urdf/Finalporsia.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-1.2735343093175715e-13 -1.8051513952056297e-17 0.019251753702260326"/>
+    <mass value="7.910176872565533"/>
+    <inertia ixx="0.022781" ixy="-0.0" ixz="0.0" iyy="0.022781" iyz="0.0" izz="0.043383"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component14_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="1.4210854715202004e-14 0.0 -0.04919483101391631"/>
+    <mass value="3.876479897603745"/>
+    <inertia ixx="0.004691" ixy="0.0" ixz="0.0" iyy="0.004691" iyz="-0.0" izz="0.003092"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.64 -0.0 -0.74"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component14_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.64 -0.0 -0.74"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component14_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component13_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.037499999999999756 0.0 -0.0025000000000001688"/>
+    <mass value="3.156672298327024"/>
+    <inertia ixx="0.002716" ixy="0.0" ixz="2e-05" iyy="0.002907" iyz="-0.0" izz="0.002716"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.6 -0.0 -0.78"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component13_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.6 -0.0 -0.78"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component13_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component12_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.050000000000000044 -4.523455546970324e-18 -2.220446049250313e-16"/>
+    <mass value="3.9458403729087896"/>
+    <inertia ixx="0.003157" ixy="-0.0" ixz="-0.0" iyy="0.004867" iyz="0.0" izz="0.004867"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.5 -0.0 -0.78"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component12_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.5 -0.0 -0.78"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component12_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component11_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0025000000000001132 0.0 0.037499999999999756"/>
+    <mass value="3.156672298327024"/>
+    <inertia ixx="0.002716" ixy="0.0" ixz="-2e-05" iyy="0.002907" iyz="0.0" izz="0.002716"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.46 -0.0 -0.74"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component11_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.46 -0.0 -0.74"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component11_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component10_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.07500000000000018"/>
+    <mass value="5.91876055936317"/>
+    <inertia ixx="0.013465" ixy="-0.0" ixz="0.0" iyy="0.013465" iyz="-0.0" izz="0.004735"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.46 -0.0 -0.59"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component10_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.46 -0.0 -0.59"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component10_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component9_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.03749999999999992 5.654319433712918e-18 0.0025000000000001688"/>
+    <mass value="3.1566722983270243"/>
+    <inertia ixx="0.002716" ixy="-0.0" ixz="-2e-05" iyy="0.002907" iyz="0.0" izz="0.002716"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.42 -0.0 -0.55"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component9_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.42 -0.0 -0.55"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component9_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component8_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.10000000000000006 0.0 0.0"/>
+    <mass value="7.891680745817552"/>
+    <inertia ixx="0.006313" ixy="-0.0" ixz="0.0" iyy="0.029462" iyz="0.0" izz="0.029462"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.22 -0.0 -0.55"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.22 -0.0 -0.55"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component7_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0025000000000001965 0.0 0.03749999999999987"/>
+    <mass value="3.156672298327024"/>
+    <inertia ixx="0.002716" ixy="0.0" ixz="-2e-05" iyy="0.002907" iyz="-0.0" izz="0.002716"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.18 0.0 -0.51"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.18 0.0 -0.51"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component6_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="8.326672684688674e-17 0.0 0.1500000000000001"/>
+    <mass value="11.837521118726338"/>
+    <inertia ixx="0.093516" ixy="-0.0" ixz="0.0" iyy="0.093516" iyz="0.0" izz="0.00947"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.18 0.0 -0.21"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.18 0.0 -0.21"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component5_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.03749999999999981 0.0 0.0025000000000000855"/>
+    <mass value="3.156672298327024"/>
+    <inertia ixx="0.002716" ixy="0.0" ixz="-2e-05" iyy="0.002907" iyz="0.0" izz="0.002716"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.14 0.0 -0.17"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.14 0.0 -0.17"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component4_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.050000000000000024 0.0 0.0"/>
+    <mass value="3.94584037290878"/>
+    <inertia ixx="0.003157" ixy="0.0" ixz="0.0" iyy="0.004867" iyz="0.0" izz="0.004867"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.04 0.0 -0.17"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.04 0.0 -0.17"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component3_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.002500000000000161 0.0 0.03749999999999981"/>
+    <mass value="3.156672298327024"/>
+    <inertia ixx="0.002716" ixy="0.0" ixz="-2e-05" iyy="0.002907" iyz="0.0" izz="0.002716"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.0 0.0 -0.13"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.0 0.0 -0.13"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.060000000000000005"/>
+    <mass value="4.735008447490536"/>
+    <inertia ixx="0.007576" ixy="0.0" ixz="0.0" iyy="0.007576" iyz="0.0" izz="0.003788"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0 -0.0 -0.01"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0 -0.0 -0.01"/>
+    <geometry>
+      <mesh filename="package://Finalporsia_description/meshes/Component2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rev1" type="continuous">
+  <origin rpy="0 0 0" xyz="0.04 0.0 -0.04"/>
+  <parent link="Component13_1"/>
+  <child link="Component14_1"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="Rev2" type="continuous">
+  <origin rpy="0 0 0" xyz="0.1 0.0 0.0"/>
+  <parent link="Component12_1"/>
+  <child link="Component13_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Rev3" type="continuous">
+  <origin rpy="0 0 0" xyz="0.04 0.0 0.04"/>
+  <parent link="Component11_1"/>
+  <child link="Component12_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Rev4" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.15"/>
+  <parent link="Component10_1"/>
+  <child link="Component11_1"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Rev5" type="continuous">
+  <origin rpy="0 0 0" xyz="0.04 0.0 0.04"/>
+  <parent link="Component9_1"/>
+  <child link="Component10_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Rev6" type="continuous">
+  <origin rpy="0 0 0" xyz="0.2 0.0 0.0"/>
+  <parent link="Component8_1"/>
+  <child link="Component9_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Rev7" type="continuous">
+  <origin rpy="0 0 0" xyz="0.04 0.0 0.04"/>
+  <parent link="Component7_1"/>
+  <child link="Component8_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Rev8" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.3"/>
+  <parent link="Component6_1"/>
+  <child link="Component7_1"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Rev9" type="continuous">
+  <origin rpy="0 0 0" xyz="0.04 0.0 0.04"/>
+  <parent link="Component5_1"/>
+  <child link="Component6_1"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Rev10" type="continuous">
+  <origin rpy="0 0 0" xyz="0.1 0.0 0.0"/>
+  <parent link="Component4_1"/>
+  <child link="Component5_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="Rev11" type="continuous">
+  <origin rpy="0 0 0" xyz="0.04 0.0 0.04"/>
+  <parent link="Component3_1"/>
+  <child link="Component4_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="Rev12" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0 -0.0 0.12"/>
+  <parent link="Component2_1"/>
+  <child link="Component3_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="Rigid13" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.01"/>
+  <parent link="base_link"/>
+  <child link="Component2_1"/>
+</joint>
+
+</robot>
