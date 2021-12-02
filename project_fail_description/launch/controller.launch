@@ -1,9 +1,0 @@
-<launch>
-
-<rosparam file="$(find project_fail_description)/launch/controller.yaml" command="load"/>
-<node args="Revolución41_position_controller Revolución42_position_controller Revolución43_position_controller Revolución44_position_controller Revolución45_position_controller Revolución46_position_controller Revolución47_position_controller Revolución48_position_controller Revolución49_position_controller Revolución50_position_controller Revolución51_position_controller Revolución52_position_controller joint_state_controller " name="controller_spawner" ns="project_fail" output="screen" pkg="controller_manager" respawn="false" type="spawner"/>
-<node name="robot_state_publisher" output="screen" pkg="robot_state_publisher" respawn="false" type="robot_state_publisher">
-  <remap from="/joint_states" to="/project_fail/joint_states"/>
-</node>
-
-</launch>
